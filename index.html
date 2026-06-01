@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Raúl Ruiz Moratalla — Ingeniería Informática (TI) · Administración de Redes y Sistemas · Valencia">
+  <meta name="author" content="Raúl Ruiz Moratalla">
+  <meta property="og:title" content="Raúl Ruiz Moratalla — TI & Systems Engineer">
+  <meta property="og:description" content="Estudiante de Ingeniería Informática especializado en redes, sistemas críticos y automatización.">
+  <meta property="og:type" content="website">
+  <title>Raúl Ruiz Moratalla — TI & Systems Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Manrope:wght@300;400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css?v=20260601">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SKIP LINK (accesibilidad)
+  ══════════════════════════════════════════════════════════ -->
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- ═══════════════════════════════════════════════════════
+       CURSOR PERSONALIZADO (sólo escritorio con hover)
+  ══════════════════════════════════════════════════════════ -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor-ring"></div>
+    <div class="cursor-dot"></div>
+    <span class="cursor-label"></span>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SPLASH — BOOTING SEQUENCE
+  ══════════════════════════════════════════════════════════ -->
+  <div class="splash" data-splash aria-hidden="true">
+    <div class="splash-inner">
+      <div class="splash-pre">
+        <span class="splash-line" data-delay="0">SYSTEM BOOT SEQUENCE INITIATED</span>
+        <span class="splash-line" data-delay="1">LOADING KERNEL MODULES...</span>
+        <span class="splash-line accent" data-delay="2">RAUL RUIZ MORATALLA // TI SYSTEM INITIALIZATION</span>
+        <span class="splash-line" data-delay="3">NETWORK STACK: OK · SECURITY LAYER: OK</span>
+      </div>
+      <div class="splash-id">
+        <span class="splash-name">RAÚL RUIZ MORATALLA</span>
+        <span class="splash-ver">v3.2026</span>
+      </div>
+      <div class="splash-bar-wrap">
+        <div class="splash-bar"></div>
+      </div>
+      <div class="splash-status">INITIALIZING PORTFOLIO...</div>
+    </div>
+    <div class="splash-grid" aria-hidden="true"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       NAV
+  ══════════════════════════════════════════════════════════ -->
+  <header class="nav" role="banner">
+    <a class="nav-logo" href="#hero" aria-label="Inicio">
+      <span class="nav-logo-text">RRM</span>
+      <span class="nav-logo-dot"></span>
+    </a>
+    <nav class="nav-links" aria-label="Secciones principales">
+      <a href="#about" class="nav-link" data-section="01">Perfil</a>
+      <a href="#skills" class="nav-link" data-section="02">Stack</a>
+      <a href="#experience" class="nav-link" data-section="03">Experiencia</a>
+      <a href="#education" class="nav-link" data-section="04">Educación</a>
+      <a href="#contact" class="nav-link" data-section="05">Contacto</a>
+    </nav>
+    <a class="nav-cta" href="https://linkedin.com/in/raulruizmoratalla" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <span>LinkedIn</span>
+    </a>
+    <button class="nav-burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav aria-label="Menú móvil">
+      <a href="#about" class="mobile-link">01 // Perfil</a>
+      <a href="#skills" class="mobile-link">02 // Stack</a>
+      <a href="#experience" class="mobile-link">03 // Experiencia</a>
+      <a href="#education" class="mobile-link">04 // Educación</a>
+      <a href="#contact" class="mobile-link">05 // Contacto</a>
+    </nav>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       MAIN
+  ══════════════════════════════════════════════════════════ -->
+  <main id="main">
+
+    <!-- ─────── SECCIÓN HERO ─────── -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <!-- Grid técnica de fondo -->
+      <div class="hero-grid" aria-hidden="true"></div>
+      <!-- Gradiente reactivo al ratón -->
+      <div class="hero-gradient" data-mouse-gradient aria-hidden="true"></div>
+      <!-- Scanline / noise -->
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="hero-inner container">
+        <div class="hero-meta">
+          <span class="hero-meta-dot" aria-hidden="true"></span>
+          <span class="hero-meta-text">SISTEMA ACTIVO · VALENCIA, ES</span>
+          <span class="hero-meta-sep" aria-hidden="true">//</span>
+          <span class="hero-meta-text">DISPONIBLE PARA PRÁCTICAS</span>
+        </div>
+
+        <p class="hero-kicker" aria-label="Especialización">
+          INGENIERÍA INFORMÁTICA · TI<br class="br-mobile"> / NETWORKS &amp; SYSTEMS ADMINISTRATION
+        </p>
+
+        <h1 class="hero-title" id="hero-title">RAÚL RUIZ.</h1>
+
+        <p class="hero-tagline">
+          Especializado en infraestructuras de red, administración de sistemas<br class="br-desktop">
+          críticos y automatización. Capacidad probada para solucionar<br class="br-desktop">
+          fallos técnicos complejos bajo presión.
+        </p>
+
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="https://linkedin.com/in/raulruizmoratalla" target="_blank" rel="noopener" data-cursor-label="open">
+            <span>Conectar en LinkedIn</span>
+          </a>
+          <a class="btn btn-ghost" href="#about" data-cursor-label="view">
+            <span>Ver infraestructura</span>
+            <span class="btn-arrow">↓</span>
+          </a>
+        </div>
+
+        <div class="hero-stats" aria-label="Datos clave">
+          <div class="hero-stat">
+            <span class="hero-stat-val" data-count-to="3">3</span>
+            <span class="hero-stat-label">Años formación UPV</span>
+          </div>
+          <div class="hero-stat-sep" aria-hidden="true">//</div>
+          <div class="hero-stat">
+            <span class="hero-stat-val">B2</span>
+            <span class="hero-stat-label">Inglés CertAcles</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Indicador de scroll -->
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span class="scroll-line"></span>
+        <span class="scroll-label">SCROLL</span>
+      </div>
+    </section>
+
+    <!-- ─────── MARQUEE TÉCNICO ─────── -->
+    <section class="marquee-section" aria-label="Stack técnico">
+      <div class="marquee-track" aria-hidden="true">
+        <div class="marquee-inner" id="marquee-inner">
+          <!-- Rellenado por JS desde manifest.js -->
+          <span class="marquee-item">UPV TI SPECIALIZATION</span>
+          <span class="marquee-sep" aria-hidden="true">◆</span>
+          <span class="marquee-item">CISCO IOS</span>
+          <span class="marquee-sep" aria-hidden="true">◆</span>
+          <span class="marquee-item">BASH SCRIPTING</span>
+          <span class="marquee-sep" aria-hidden="true">◆</span>
+          <span class="marquee-item">AZURE DEVOPS</span>
+          <span class="marquee-sep" aria-hidden="true">◆</span>
+          <span class="marquee-item">DOCKER</span>
+          <span class="marquee-sep" aria-hidden="true">◆</span>
+          <span class="marquee-item">LINUX DEBIAN/UBUNTU</span>
+          <span class="marquee-sep" aria-hidden="true">◆</span>
+          <span class="marquee-item">ACTIVE DIRECTORY</span>
+          <span class="marquee-sep" aria-hidden="true">◆</span>
+          <span class="marquee-item">WIRESHARK</span>
+          <span class="marquee-sep" aria-hidden="true">◆</span>
+          <span class="marquee-item">FL STUDIO AUDIO NETWORK</span>
+          <span class="marquee-sep" aria-hidden="true">◆</span>
+          <span class="marquee-item">TCP/IP PROTOCOLS</span>
+          <span class="marquee-sep" aria-hidden="true">◆</span>
+          <span class="marquee-item">MICROSOFT AZURE</span>
+          <span class="marquee-sep" aria-hidden="true">◆</span>
+          <span class="marquee-item">PYTHON AUTOMATION</span>
+          <span class="marquee-sep" aria-hidden="true">◆</span>
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="marquee-inner marquee-inner--clone" aria-hidden="true">
+          <span class="marquee-item">UPV TI SPECIALIZATION</span>
+          <span class="marquee-sep">◆</span>
+          <span class="marquee-item">CISCO IOS</span>
+          <span class="marquee-sep">◆</span>
+          <span class="marquee-item">BASH SCRIPTING</span>
+          <span class="marquee-sep">◆</span>
+          <span class="marquee-item">AZURE DEVOPS</span>
+          <span class="marquee-sep">◆</span>
+          <span class="marquee-item">DOCKER</span>
+          <span class="marquee-sep">◆</span>
+          <span class="marquee-item">LINUX DEBIAN/UBUNTU</span>
+          <span class="marquee-sep">◆</span>
+          <span class="marquee-item">ACTIVE DIRECTORY</span>
+          <span class="marquee-sep">◆</span>
+          <span class="marquee-item">WIRESHARK</span>
+          <span class="marquee-sep">◆</span>
+          <span class="marquee-item">FL STUDIO AUDIO NETWORK</span>
+          <span class="marquee-sep">◆</span>
+          <span class="marquee-item">TCP/IP PROTOCOLS</span>
+          <span class="marquee-sep">◆</span>
+          <span class="marquee-item">MICROSOFT AZURE</span>
+          <span class="marquee-sep">◆</span>
+          <span class="marquee-item">PYTHON AUTOMATION</span>
+          <span class="marquee-sep">◆</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────── SECCIÓN 01: SOBRE MÍ ─────── -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-num" aria-hidden="true">01</span>
+          <span class="section-label">// PERFIL DEL SISTEMA</span>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-content">
+            <h2 class="about-title reveal" id="about-title">
+              Ingeniero en<br><em class="accent-text">construcción.</em>
+            </h2>
+            <p class="about-p reveal">
+              Estudiante de 3.er año de Ingeniería Informática (especialidad TI) en la UPV, con foco en administración de redes, sistemas y seguridad. Perfil proactivo, resolutivo y con criterio técnico formado en entornos de tolerancia cero al fallo.
+            </p>
+            <p class="about-p reveal">
+              Mi trayectoria como DJ y productor musical profesional ha consolidado mi capacidad para gestionar infraestructuras técnicas complejas en tiempo real —redes de audio digital, MIDI/OSC de baja latencia, equipos en directo— bajo presión extrema y ante público. Esa disciplina se traslada directamente a mis proyectos de ingeniería.
+            </p>
+
+            <ul class="about-highlights reveal" aria-label="Fortalezas clave">
+              <li>
+                <span class="hi-icon" aria-hidden="true">→</span>
+                <span>Agilidad mental y resolución de problemas bajo presión</span>
+              </li>
+              <li>
+                <span class="hi-icon" aria-hidden="true">→</span>
+                <span>Tolerancia cero al fallo: entornos críticos en tiempo real</span>
+              </li>
+              <li>
+                <span class="hi-icon" aria-hidden="true">→</span>
+                <span>Carnet de conducir tipo B</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tarjeta lateral de metadatos -->
+          <aside class="about-meta-card reveal" aria-label="Metadatos del perfil">
+            <div class="meta-card-header">
+              <span class="meta-card-label">SYSTEM_STATUS</span>
+              <span class="meta-card-dot online" aria-label="En línea"></span>
+            </div>
+            <dl class="meta-list">
+              <div class="meta-row">
+                <dt class="meta-key">ESTADO</dt>
+                <dd class="meta-val accent">Cursando 3.er año · UPV</dd>
+              </div>
+              <div class="meta-row">
+                <dt class="meta-key">LOCALIZACIÓN</dt>
+                <dd class="meta-val">Valencia, ES</dd>
+              </div>
+              <div class="meta-row">
+                <dt class="meta-key">ESPECIALIDAD</dt>
+                <dd class="meta-val">Tecnologías de la Información</dd>
+              </div>
+              <div class="meta-row">
+                <dt class="meta-key">IDIOMAS</dt>
+                <dd class="meta-val">ES (nativo) · EN (B2)</dd>
+              </div>
+              <div class="meta-row">
+                <dt class="meta-key">LICENCIA</dt>
+                <dd class="meta-val">Carnet B</dd>
+              </div>
+              <div class="meta-row">
+                <dt class="meta-key">DISPONIBILIDAD</dt>
+                <dd class="meta-val accent">Prácticas / Colaboraciones</dd>
+              </div>
+            </dl>
+            <div class="meta-card-footer">
+              <a href="mailto:raulruizmoratalla@gmail.com" class="meta-contact-link">
+                raulruizmoratalla@gmail.com
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────── SECCIÓN 02: HABILIDADES ─────── -->
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-num" aria-hidden="true">02</span>
+          <span class="section-label">// STACK TÉCNICO</span>
+        </div>
+        <h2 class="skills-title reveal" id="skills-title">
+          Infraestructura<br><em class="accent-text">técnica.</em>
+        </h2>
+
+        <div class="skills-grid" aria-label="Clústeres de habilidades técnicas">
+
+          <!-- 02.1 -->
+          <article class="skill-cluster reveal" data-cluster="01" aria-labelledby="cluster-01-title">
+            <div class="cluster-header">
+              <div class="cluster-icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="4" y="4" width="32" height="32" rx="2" stroke="currentColor" stroke-width="1.2"/>
+                  <path d="M13 15l-5 5 5 5M27 15l5 5-5 5M22 12l-4 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="cluster-id" aria-hidden="true">02.1</div>
+            </div>
+            <h3 class="cluster-title" id="cluster-01-title">Programación<br>&amp; Scripting</h3>
+            <ul class="cluster-items" aria-label="Lenguajes y scripting">
+              <li>Java</li>
+              <li>C / C++</li>
+              <li>Python (Automatización)</li>
+              <li>SQL</li>
+              <li>Bash Scripting</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+
+          <!-- 02.2 -->
+          <article class="skill-cluster reveal" data-cluster="02" aria-labelledby="cluster-02-title">
+            <div class="cluster-header">
+              <div class="cluster-icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="4" y="8" width="32" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
+                  <rect x="4" y="17" width="32" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
+                  <rect x="4" y="26" width="32" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
+                  <circle cx="31" cy="11" r="1.5" fill="currentColor"/>
+                  <circle cx="31" cy="20" r="1.5" fill="currentColor"/>
+                  <circle cx="31" cy="29" r="1.5" fill="currentColor"/>
+                </svg>
+              </div>
+              <div class="cluster-id" aria-hidden="true">02.2</div>
+            </div>
+            <h3 class="cluster-title" id="cluster-02-title">Sistemas e<br>Infraestructura</h3>
+            <ul class="cluster-items" aria-label="Sistemas e infraestructura">
+              <li>Windows Server (AD, GPOs)</li>
+              <li>Linux Debian / Ubuntu</li>
+              <li>VMware &amp; VirtualBox</li>
+              <li>Virtualización avanzada</li>
+            </ul>
+          </article>
+
+          <!-- 02.3 -->
+          <article class="skill-cluster reveal" data-cluster="03" aria-labelledby="cluster-03-title">
+            <div class="cluster-header">
+              <div class="cluster-icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="1.2"/>
+                  <circle cx="20" cy="20" r="6" stroke="currentColor" stroke-width="1.2"/>
+                  <line x1="20" y1="6" x2="20" y2="14" stroke="currentColor" stroke-width="1.5"/>
+                  <line x1="34" y1="20" x2="26" y2="20" stroke="currentColor" stroke-width="1.5"/>
+                  <line x1="20" y1="34" x2="20" y2="26" stroke="currentColor" stroke-width="1.5"/>
+                  <line x1="6" y1="20" x2="14" y2="20" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <div class="cluster-id" aria-hidden="true">02.3</div>
+            </div>
+            <h3 class="cluster-title" id="cluster-03-title">Redes &amp;<br>Seguridad</h3>
+            <ul class="cluster-items" aria-label="Redes y seguridad">
+              <li>Cisco IOS (Switches / Routers)</li>
+              <li>Protocolos TCP/IP</li>
+              <li>Wireshark — Análisis tráfico</li>
+              <li>Segmentación / VLANs</li>
+            </ul>
+          </article>
+
+          <!-- 02.4 -->
+          <article class="skill-cluster reveal" data-cluster="04" aria-labelledby="cluster-04-title">
+            <div class="cluster-header">
+              <div class="cluster-icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M20 6C12.268 6 6 12.268 6 20s6.268 14 14 14 14-6.268 14-14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                  <path d="M20 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="16" y="24" width="8" height="10" rx="1" stroke="currentColor" stroke-width="1.2"/>
+                  <line x1="20" y1="20" x2="20" y2="24" stroke="currentColor" stroke-width="1.2"/>
+                </svg>
+              </div>
+              <div class="cluster-id" aria-hidden="true">02.4</div>
+            </div>
+            <h3 class="cluster-title" id="cluster-04-title">Cloud &amp; DevOps<br>/ Tools</h3>
+            <ul class="cluster-items" aria-label="Cloud y DevOps">
+              <li>Microsoft Azure</li>
+              <li>Azure DevOps (CI/CD)</li>
+              <li>Docker</li>
+              <li>Git / GitHub</li>
+              <li>FL Studio (Audio Network)</li>
+            </ul>
+          </article>
+
+        </div><!-- /.skills-grid -->
+      </div>
+    </section>
+
+    <!-- ─────── SECCIÓN 03: EXPERIENCIA ─────── -->
+    <section class="section experience" id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-num" aria-hidden="true">03</span>
+          <span class="section-label">// HISTORIAL DE RED</span>
+        </div>
+        <h2 class="exp-main-title reveal" id="exp-title">
+          Trayectoria<br><em class="accent-text">en producción.</em>
+        </h2>
+
+        <div class="timeline" aria-label="Línea de tiempo de experiencia">
+
+          <!-- Experiencia 1: DJ & Productor -->
+          <article class="timeline-item timeline-item--dj reveal" aria-labelledby="exp-1-title">
+            <div class="timeline-marker" aria-hidden="true">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-content timeline-content--dj">
+              <!-- Foto marquee de fondo -->
+              <div class="dj-bg-strip" aria-hidden="true">
+                <div class="dj-bg-inner">
+                  <img src="assets/img/dj-1.jpg" alt="">
+                  <img src="assets/img/dj-2.jpg" alt="">
+                  <img src="assets/img/dj-3.jpg" alt="">
+                  <img src="assets/img/dj-4.jpg" alt="">
+                  <img src="assets/img/dj-5.jpg" alt="">
+                </div>
+                <div class="dj-bg-inner" aria-hidden="true">
+                  <img src="assets/img/dj-1.jpg" alt="">
+                  <img src="assets/img/dj-2.jpg" alt="">
+                  <img src="assets/img/dj-3.jpg" alt="">
+                  <img src="assets/img/dj-4.jpg" alt="">
+                  <img src="assets/img/dj-5.jpg" alt="">
+                </div>
+              </div>
+              <!-- Overlay oscuro para que el texto sea legible -->
+              <div class="dj-bg-overlay" aria-hidden="true"></div>
+              <!-- Contenido de texto -->
+              <div class="dj-text">
+                <header class="timeline-header">
+                  <div class="timeline-meta">
+                    <span class="timeline-period">2023 — ACTUALIDAD</span>
+                    <span class="timeline-type">FREELANCE</span>
+                  </div>
+                  <h3 class="timeline-role" id="exp-1-title">DJ &amp; Productor Musical</h3>
+                  <p class="timeline-entity">Actuaciones en directo</p>
+                </header>
+                <div class="timeline-tags" aria-label="Tecnologías">
+                  <span class="tag">MIDI/OSC</span>
+                  <span class="tag">Audio Digital</span>
+                  <span class="tag">Latencia Crítica</span>
+                  <span class="tag">Real-Time</span>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>Pincho en directo ante público gestionando en tiempo real señales de audio digital de baja latencia.</li>
+                  <li>Montaje y configuración de la mesa y equipos propios cuando el evento lo requiere.</li>
+                  <li>Tolerancia cero al fallo: resolución de problemas técnicos en el momento sin posibilidad de parar.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /.timeline -->
+      </div>
+    </section>
+
+    <!-- ─────── SECCIÓN 04: EDUCACIÓN ─────── -->
+    <section class="section education" id="education" aria-labelledby="edu-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-num" aria-hidden="true">04</span>
+          <span class="section-label">// CERTIFICACIONES &amp; EDUCACIÓN</span>
+        </div>
+        <h2 class="edu-title reveal" id="edu-title">
+          Base<br><em class="accent-text">académica.</em>
+        </h2>
+
+        <div class="edu-grid">
+
+          <!-- Grado UPV -->
+          <article class="edu-card reveal" aria-labelledby="edu-card-1-title">
+            <div class="edu-card-tag">GRADO UNIVERSITARIO</div>
+            <h3 class="edu-card-title" id="edu-card-1-title">
+              Grado en Ingeniería Informática
+            </h3>
+            <p class="edu-card-spec">Especialidad: Tecnologías de la Información (TI)</p>
+            <p class="edu-card-institution">Universitat Politècnica de València (UPV)</p>
+            <p class="edu-card-period">2023 – Actualidad</p>
+            <p class="edu-card-note">Enfocado en administración, seguridad y redes de sistemas.</p>
+          </article>
+
+          <!-- Idiomas -->
+          <article class="edu-card reveal" aria-labelledby="edu-card-2-title">
+            <div class="edu-card-tag">IDIOMAS</div>
+            <h3 class="edu-card-title" id="edu-card-2-title">Competencia Lingüística</h3>
+            <ul class="lang-list" aria-label="Idiomas">
+              <li>
+                <span class="lang-name">Español</span>
+                <span class="lang-level">Nativo</span>
+                <div class="lang-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  <div class="lang-fill" style="--pct: 100%"></div>
+                </div>
+              </li>
+              <li>
+                <span class="lang-name">Inglés</span>
+                <span class="lang-level">B2 — CertAcles 7.1</span>
+                <div class="lang-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  <div class="lang-fill" style="--pct: 75%"></div>
+                </div>
+              </li>
+            </ul>
+          </article>
+
+        </div><!-- /.edu-grid -->
+      </div>
+    </section>
+
+    <!-- ─────── SECCIÓN 05: CONTACTO ─────── -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-num" aria-hidden="true">05</span>
+          <span class="section-label">// CONSOLA DE CONTACTO</span>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Form terminal -->
+          <div class="contact-form-wrap reveal">
+            <h2 class="contact-title" id="contact-title">
+              Iniciar<br><em class="accent-text">conexión.</em>
+            </h2>
+            <form class="terminal-form" id="contact-form" aria-label="Formulario de contacto" novalidate>
+              <div class="form-step" data-step="1">
+                <label class="form-label" for="f-name">
+                  <span class="form-num">01</span>
+                  <span>¿Cómo te llamas?</span>
+                </label>
+                <div class="form-input-wrap">
+                  <span class="form-prompt" aria-hidden="true">›</span>
+                  <input class="form-input" type="text" id="f-name" name="name"
+                    placeholder="Nombre o empresa..." autocomplete="name" required>
+                </div>
+              </div>
+              <div class="form-step" data-step="2">
+                <label class="form-label" for="f-email">
+                  <span class="form-num">02</span>
+                  <span>Tu email</span>
+                </label>
+                <div class="form-input-wrap">
+                  <span class="form-prompt" aria-hidden="true">›</span>
+                  <input class="form-input" type="email" id="f-email" name="email"
+                    placeholder="email@dominio.com" autocomplete="email" required>
+                </div>
+              </div>
+              <div class="form-step" data-step="3">
+                <label class="form-label" for="f-msg">
+                  <span class="form-num">03</span>
+                  <span>Tu mensaje</span>
+                </label>
+                <div class="form-input-wrap form-textarea-wrap">
+                  <span class="form-prompt" aria-hidden="true">›</span>
+                  <textarea class="form-input form-textarea" id="f-msg" name="message"
+                    placeholder="Cuéntame en qué puedo ayudarte..." rows="4" required></textarea>
+                </div>
+              </div>
+              <button class="btn btn-primary form-submit" type="submit" data-cursor-label="terminal">
+                <span class="btn-icon" aria-hidden="true">⌲</span>
+                <span>Enviar mensaje</span>
+              </button>
+              <p class="form-note">
+                O escríbeme directamente a
+                <a href="mailto:raulruizmoratalla@gmail.com">raulruizmoratalla@gmail.com</a>
+              </p>
+            </form>
+          </div>
+
+          <!-- Links directos -->
+          <aside class="contact-links reveal" aria-label="Canales de contacto directos">
+            <p class="contact-links-title">Acceso directo</p>
+            <ul class="contact-cmd-list">
+              <li>
+                <a href="mailto:raulruizmoratalla@gmail.com" class="cmd-link" data-cursor-label="open">
+                  <span class="cmd-idx" aria-hidden="true">01</span>
+                  <span class="cmd-text">
+                    <span class="cmd-label">Email</span>
+                    <span class="cmd-action">mail --open</span>
+                  </span>
+                  <span class="cmd-arrow" aria-hidden="true">→</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/raulruizmoratalla" target="_blank" rel="noopener" class="cmd-link" data-cursor-label="open">
+                  <span class="cmd-idx" aria-hidden="true">02</span>
+                  <span class="cmd-text">
+                    <span class="cmd-label">LinkedIn</span>
+                    <span class="cmd-action">linkedin --connect</span>
+                  </span>
+                  <span class="cmd-arrow" aria-hidden="true">→</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/raulruizmoratalla" target="_blank" rel="noopener" class="cmd-link" data-cursor-label="view">
+                  <span class="cmd-idx" aria-hidden="true">03</span>
+                  <span class="cmd-text">
+                    <span class="cmd-label">GitHub</span>
+                    <span class="cmd-action">github --view</span>
+                  </span>
+                  <span class="cmd-arrow" aria-hidden="true">→</span>
+                </a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-bg-text" aria-hidden="true">RAÚL RUIZ</div>
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <nav class="footer-nav" aria-label="Navegación del footer">
+          <a href="#about">01 Perfil</a>
+          <a href="#skills">02 Stack</a>
+          <a href="#experience">03 Experiencia</a>
+          <a href="#education">04 Educación</a>
+          <a href="#contact">05 Contacto</a>
+        </nav>
+        <div class="footer-social">
+          <a href="https://github.com/raulruizmoratalla" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+          <a href="https://linkedin.com/in/raulruizmoratalla" target="_blank" rel="noopener" aria-label="LinkedIn">LI</a>
+          <a href="mailto:raulruizmoratalla@gmail.com" aria-label="Email">✉</a>
+        </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Raúl Ruiz Moratalla — Valencia, España</p>
+        <button class="footer-reboot" id="reboot-btn" aria-label="Volver al inicio">
+          System Reboot ↑
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SCRIPTS (defer, orden correcto, IIFE pattern)
+  ══════════════════════════════════════════════════════════ -->
+  <script defer src="lib/gsap.min.js"></script>
+  <script defer src="lib/ScrollTrigger.min.js"></script>
+  <script defer src="lib/manifest.js"></script>
+  <script defer src="main.js?v=20260601"></script>
+
+</body>
+</html>
