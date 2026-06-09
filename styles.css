@@ -1786,19 +1786,66 @@ body::after {
 /* =============================================================
    19. RESPONSIVE
    ============================================================= */
+
+/* ── Sticky meta card behaviour ─────────────────────────── */
 @media (min-width: 540px) {
   .about-meta-card { position: static; }
 }
-
 @media (min-width: 960px) {
   .about-meta-card { position: sticky; }
 }
 
+/* ── Medium mobile (≤720px) — fix vw-only font sizes ─────── */
+@media (max-width: 720px) {
+  /* vw resolves too small below 640px — enforce readable floor */
+  .hero-kicker {
+    font-size: clamp(10px, 2.6vw, 12px);
+  }
+  .hero-meta {
+    flex-wrap: wrap;
+    font-size: clamp(10px, 2.3vw, 11px);
+    gap: 0.3rem 0.65rem;
+  }
+  .hero-tagline {
+    font-size: clamp(0.92rem, 2.8vw, 1.1rem);
+  }
+}
+
+/* ── Small mobile (≤539px) — full mobile layout ─────────── */
 @media (max-width: 539px) {
-  .hero-stats { gap: 1rem; }
+
+  /* Nav: logo + burger already fill the bar; CTA is redundant */
+  .nav-cta { display: none; }
+
+  /* Hero stats */
+  .hero-stats    { gap: 1rem; }
   .hero-stat-sep { display: none; }
+
+  /* Meta row separators clutter when text wraps */
+  .hero-meta-sep { display: none; }
+
+  /* Hero title: comfortable on 375–430 px phones */
+  .hero-title    { font-size: clamp(2.8rem, 14vw, 3.8rem); }
+
+  /* Section padding: breathing room without wasting height */
+  .section       { padding-block: clamp(3.5rem, 10vh, 6rem); }
+
+  /* Timeline */
   .timeline-item { grid-template-columns: 1.5rem 1fr; }
   .timeline-meta { flex-direction: column; gap: 0.2rem; }
+
+  /* DJ card: ensure photos are visible as background on mobile */
+  .timeline-content--dj { min-height: 280px; }
+
+  /* Contact: reduce gap between form and cmd-list */
+  .contact-grid { gap: 2.5rem; }
+
+  /* iOS Safari zoom fix: inputs < 16px trigger page zoom on focus */
+  .form-input,
+  .form-textarea { font-size: 16px; }
+
+  /* Footer bg text: scale down to avoid horizontal overflow */
+  .footer-bg-text { font-size: clamp(3.2rem, 15vw, 6rem); }
 }
 
 /* =============================================================
